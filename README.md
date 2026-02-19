@@ -1,6 +1,6 @@
 # Créér une Todo List avec JavaScript  
 
-## To-do List 
+## Todo List 
  
  --------------
 
@@ -16,9 +16,9 @@ Projet personnel (Février 2026) :
 Réalisation d’une To‑Do List en HTML, CSS et JavaScript.
 Ce type de projet est un classique du portfolio d’un développeur web, car il permet de mettre en pratique les bases essentielles du langage.
 
-J’avais déjà créé une première version il y a 18 mois, mais mon niveau ayant progressé, j’ai souhaité proposer une version plus complète et mieux structurée.
+J’avais déjà créé une première version il y a 15 mois, mais mon niveau ayant progressé, j’ai souhaité proposer une version plus complète et mieux structurée.
 
-Cette nouvelle To‑Do List inclut notamment :
+Cette nouvelle Todo List inclut notamment :
 * la modification d’une tâche existante
 * la possibilité de marquer une tâche comme réalisée
 * un message de confirmation avant suppression
