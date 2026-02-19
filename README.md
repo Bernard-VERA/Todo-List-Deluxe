@@ -13,7 +13,7 @@
 ## Mission  
 
 Projet personnel (Février 2026) :
-Réalisation d’une To‑Do List en HTML, CSS et JavaScript.
+Réalisation d’une Todo List en HTML, CSS et JavaScript.<br />
 Ce type de projet est un classique du portfolio d’un développeur web, car il permet de mettre en pratique les bases essentielles du langage.
 
 J’avais déjà créé une première version il y a 15 mois, mais mon niveau ayant progressé, j’ai souhaité proposer une version plus complète et mieux structurée.
@@ -24,11 +24,10 @@ Cette nouvelle Todo List inclut notamment :
 * un message de confirmation avant suppression
 * une interface plus soignée et plus ergonomique
 
-Ce projet m’a permis de consolider mes compétences en manipulation du DOM, gestion des événements et organisation du code JavaScript.
 
 ## Compétences 
  
-Ce projet m’a permis de consolider plusieurs compétences essentielles en JavaScript moderne et en développement front‑end :
+Ce projet me permet de consolider plusieurs compétences essentielles en JavaScript moderne et en développement front‑end :
 
 Manipulation avancée du DOM
 * Création dynamique d’éléments (createElement, append, innerHTML)
