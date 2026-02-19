@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>Todo List Deluxe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="todo-container">
+    <button id="dark-toggle" class="icon-btn dark-toggle" title="Mode sombre/clair">☀️</button>
+    <img
+      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80"
+      alt="Laptop"
+      class="todo-header-img"
+    />
+    <h1 class="todo-title">✅ Ma Todo List</h1>
+    <form id="todo-form" class="todo-form">
+      <input type="text" id="todo-input" class="todo-input" placeholder="Ajouter une tâche..." />
+      <button type="submit" class="todo-add-btn">＋</button>
+    </form>
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <!-- Dialogue de confirmation pour suppression -->
+    <div id="confirm-overlay" class="confirm-overlay hidden">
+      <div class="confirm-dialog">
+        <h2>Supprimer cette tâche ?</h2>
+        <p id="confirm-text"></p>
+        <div class="confirm-actions">
+          <button id="confirm-cancel" class="icon-btn" style="background:#888">Annuler</button>
+          <button id="confirm-ok" class="icon-btn" style="background:#f44336">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>Bernard VERA © 2026</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
