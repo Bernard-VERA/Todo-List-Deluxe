@@ -19,13 +19,9 @@ Ce type de projet est un classique du portfolio d’un développeur web, car il 
 J’avais déjà créé une première version il y a 18 mois, mais mon niveau ayant progressé, j’ai souhaité proposer une version plus complète et mieux structurée.
 
 Cette nouvelle To‑Do List inclut notamment :
-
 * la modification d’une tâche existante
-
 * la possibilité de marquer une tâche comme réalisée
-
 * un message de confirmation avant suppression
-
 * une interface plus soignée et plus ergonomique
 
 Ce projet m’a permis de consolider mes compétences en manipulation du DOM, gestion des événements et organisation du code JavaScript.
@@ -61,12 +57,7 @@ Mode sombre dynamique
 
 Organisation du code et bonnes pratiques
 * Encapsulation dans une IIFE pour éviter la pollution de l’espace global
-* Séparation claire entre :
-- état
-- DOM
-- logique métier
-- rendu
-- persistance
+* Séparation claire entre : état, DOM, logique métier, rendu, persistance
 * Code lisible, structuré et facilement maintenable
 
 --------
