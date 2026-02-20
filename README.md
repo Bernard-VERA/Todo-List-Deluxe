@@ -1,6 +1,6 @@
 # Créér une Todo List avec JavaScript  
 
-## Todo List 
+## Todo List Deluxe
  
  --------------
 
