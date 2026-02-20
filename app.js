@@ -1,6 +1,19 @@
 (function () {
-  // --- État ---
-  let todos = JSON.parse(localStorage.getItem("todo-list") || "[]");
+  // --- Constantes ---
+  const MAX_LENGTH = 150;
+
+  // --- État ( Avec validation du localStorage )---
+  let todos = [];
+  try {
+    const stored = JSON.parse(localStorage.getItem("todo-list") || "[]");
+    if (Array.isArray(stored)) {
+      todos = stored
+        .filter((t) => t && typeof t.text === "string" && typeof t.done === "boolean")
+        .map((t) => ({ text: t.text.slice(0, MAX_LENGTH), done: t.done }));
+    }
+  } catch {
+    localStorage.removeItem("todo-list");
+  }
   let editingIdx = null;
   let pendingDeleteIdx = null;
 
@@ -49,6 +62,7 @@
         inp.className = "edit-input";
         inp.type = "text";
         inp.value = todo.text;
+        inp.maxLength = MAX_LENGTH;
         inp.addEventListener("keydown", (e) => {
           if (e.key === "Enter") { saveEdit(idx, inp.value); }
           if (e.key === "Escape") { editingIdx = null; render(); }
@@ -101,8 +115,9 @@
   }
 
   function saveEdit(idx, value) {
-    if (value.trim() === "") return;
-    todos[idx].text = value.trim();
+    const trimmed = value.trim();
+    if (trimmed === "" || trimmed.length > MAX_LENGTH) return;
+    todos[idx].text = trimmed;
     editingIdx = null;
     save();
     render();
@@ -111,7 +126,7 @@
   // --- Confirmation suppression ---
   function showConfirm(idx) {
     pendingDeleteIdx = idx;
-    confirmText.innerHTML = 'Êtes-vous sûr de vouloir supprimer : <b>' + todos[idx].text + '</b> ?';
+    confirmText.textContent = "Êtes-vous sûr de vouloir supprimer : « " + todos[idx].text + " » ?";
     overlay.classList.remove("hidden");
   }
 
@@ -130,8 +145,9 @@
   // --- Ajout ---
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    if (input.value.trim() === "") return;
-    todos.push({ text: input.value.trim(), done: false });
+    const trimmed = input.value.trim();
+    if (trimmed === "" || trimmed.length > MAX_LENGTH) return;
+    todos.push({ text: trimmed, done: false });
     input.value = "";
     save();
     render();
