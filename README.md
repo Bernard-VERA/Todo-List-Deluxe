@@ -60,3 +60,6 @@ Organisation du code et bonnes pratiques
 * Code lisible, structuré et facilement maintenable
 
 --------
+<p align="center" width="100%">
+    <img width="90%" src="https://github.com/Bernard-VERA/Todo-List-Deluxe/blob/main/image/site_img.jpeg"> 
+</p>
