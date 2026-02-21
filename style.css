@@ -26,6 +26,13 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 639px)
+  {
+  .todo-container {
+    max-width: 98%;
+  }
+ }
+
 @media (min-width: 640px) {
   .todo-container {
     max-width: 520px;
@@ -158,7 +165,7 @@ body {
 /* Modification de ligne */
 .todo-item .edit-input {
   flex: 1;
-  padding: 5px 3px;
+  padding: 5px 0px;
   font-size: 1em;
   border: 1px solid #dadada;
   border-radius: 4px;
