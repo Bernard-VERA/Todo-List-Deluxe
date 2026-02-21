@@ -26,12 +26,15 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 639px)
-  {
+@media (max-width: 639px) {
   .todo-container {
     max-width: 98%;
   }
- }
+
+  .edit-input {
+    max-width: 70%;
+  }
+}
 
 @media (min-width: 640px) {
   .todo-container {
