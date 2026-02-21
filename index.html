@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow">
-  <!-- Sécurité renforcée --> 
-  <meta http-equiv="Content-Security-Policy" 
-  content="default-src 'self'; 
+  <!-- Sécurité renforcée -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
   img-src 'self'; 
   style-src 'self'; 
   script-src 'self'; 
   object-src 'none'; 
   base-uri 'self'; 
   form-action 'self'; 
-  frame-ancestors 'none';"> 
-  <meta name="referrer" content="no-referrer"> 
+  frame-ancestors 'none';">
+  <meta name="referrer" content="no-referrer">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Todo List Deluxe</title>
-  <link rel="icon" href="./image/favicon.ico"/>
+  <link rel="icon" href="./image/favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <main class="todo-container">
     <button id="dark-toggle" class="icon-btn dark-toggle" title="Mode sombre/clair">☀️</button>
-    <img
-      src="./image/list_img.webp"
-      alt="Laptop"
-      class="todo-header-img"
-    />
+    <img src="./image/list_img.webp" alt="Laptop" class="todo-header-img" />
     <h1 class="todo-title">✅ Ma Todo List</h1>
     <form id="todo-form" class="todo-form">
       <input type="text" id="todo-input" class="todo-input" placeholder="Ajouter une tâche..." maxlength="150" />
@@ -49,8 +46,9 @@
     </div>
   </main>
   <footer class="app-footer">
-      <p>Bernard VERA © 2026</p>
+    <p>Bernard VERA © 2026</p>
   </footer>
   <script src="app.js"></script>
 </body>
+
 </html>
