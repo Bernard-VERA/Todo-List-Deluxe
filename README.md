@@ -59,6 +59,31 @@ Organisation du code et bonnes pratiques
 * Séparation claire entre : état, DOM, logique métier, rendu, persistance
 * Code lisible, structuré et facilement maintenable
 
+
+## Sécurité
+
+Ce projet inclut plusieurs mesures destinées à renforcer la sécurité de l’application, en particulier contre les attaques XSS et les injections de contenu malveillant. L’objectif est de garantir que les données manipulées restent sûres, même lorsqu’elles proviennent de l’utilisateur.
+
+Protection contre les attaques XSS
+* les textes saisies sont insérés via "textContent"
+* Le navigateur affiche la balise comme du texte, sans l’exécuter
+* Aucune exécution de code dynamique
+
+Validation stricte des entrées utilisateur
+* suppression des espaces inutiles avec (trim())
+* refus des entrées vides
+* limitation de la longueur maximale du texte
+
+Content Security Policy (CSP)
+* bloquer les scripts inline non autorisés
+* empêcher le chargement de scripts externes non approuvés
+* réduire fortement les risques d’XSS persistante ou réfléchie
+
+Stockage local sécurisé
+* seules des données validées et non exécutables y sont stockées
+* aucune donnée HTML ou script n’est jamais réinjectée dans le DOM via "innerHTML"
+* les données restaurées au chargement sont traitées comme du texte
+
 --------
 <p align="center" width="100%">
     <img width="90%" src="https://github.com/Bernard-VERA/Todo-List-Deluxe/blob/main/image/site_img.jpeg"> 
