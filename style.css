@@ -4,7 +4,7 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   background: linear-gradient(120deg, #e9e4f0 0%, #d3cce3 100%);
   transition: background 0.3s;
@@ -56,6 +56,10 @@ body {
   font-size: 1.09em; display: flex; align-items: center; justify-content: center;
   transition: background 0.17s;
 }
+
+.icon-btn {
+  margin: 0 3px;
+}
 .todo-add-btn:hover, .icon-btn:hover { background: #144f91; }
 
 .todo-list { list-style: none; padding: 0 18px; }
@@ -104,13 +108,14 @@ body {
 .confirm-dialog p { margin-bottom: 18px; color: #555; }
 .confirm-actions { display: flex; gap: 12px; justify-content: center; }
 
-footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    padding: 12px;
-    font-weight: 600;
-    color: #1976d2;
+.app-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.92em;
+  font-weight: 600;
+  color: #1976d2;
+  letter-spacing: 0.5px;
 }
 
 /* ---- MODE SOMBRE ---- */
@@ -129,4 +134,4 @@ html.dark .todo-empty { color: #a59869; }
 html.dark .confirm-dialog { background: #22283a; color: #ffe173; }
 html.dark .confirm-dialog p { color: #bbb; }
 html.dark .edit-input { background: #22283a; border-color: #3a4660; color: #ffe173; }
-html.dark footer { color: #ffe173; }
+html.dark .app-footer { color: #ffe173; }
