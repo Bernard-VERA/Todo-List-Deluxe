@@ -97,7 +97,10 @@ Cette approche offre plusieurs avantages :
 * mise en production plus rapide et plus fiable
 * meilleure compréhension des outils DevOps modernes
 
-L’intégration de GitHub Actions représente une étape importante dans la professionnalisation de mon workflow de développement.
+L’intégration de GitHub Actions représente une étape importante dans la professionnalisation de mon workflow de développement.  
+
+<br/>
+Vous pouvez voir le projet en cliquant ici : <a href="https://bernard-vera.github.io/Todo-List-Deluxe/" target="_blank">Todo List Deluxe</a>  
 
 
 --------
