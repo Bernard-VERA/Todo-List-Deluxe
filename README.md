@@ -85,22 +85,10 @@ Stockage local sécurisé
 * aucune donnée HTML ou script n’est jamais réinjectée dans le DOM via "innerHTML"
 * les données restaurées au chargement sont traitées comme du texte
 
-## Déploiement automatisé avec GitHub Actions
-
-Ce projet m’a également permis d’utiliser GitHub Actions pour la première fois afin d’automatiser la mise en ligne du site.
-Grâce à un workflow dédié, chaque mise à jour poussée sur la branche principale déclenche automatiquement un processus de build et de déploiement.
-
-Cette approche offre plusieurs avantages :
-
-* déploiement continu sans intervention manuelle
-* réduction des erreurs humaines
-* mise en production plus rapide et plus fiable
-* meilleure compréhension des outils DevOps modernes
-
-L’intégration de GitHub Actions représente une étape importante dans la professionnalisation de mon workflow de développement.  
+ 
 
 <br/>
-Vous pouvez voir le projet en cliquant ici : <a href="https://bernard-vera.github.io/Todo-List-Deluxe/" target="_blank">Todo List Deluxe</a>  
+Vous pouvez voir le projet en cliquant ici : <a href="https://todo-list-deluxe.vercel.app/" target="_blank">Todo List Deluxe</a>  
 
 
 --------
